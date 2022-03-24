@@ -19,9 +19,9 @@ public class Questao1 {
 			short formaPag=0;
 			
 			System.out.println("Escolha uma forma de pagamento: ");
-			System.out.println("1 - ¿ Vista c/ 10% de desconto");
+			System.out.println("1 - √Ä Vista c/ 10% de desconto");
 			System.out.println("2- Parcelado 2x");
-			System.out.println("3- Parcelado de 3x atÈ 6x c/ juros");
+			System.out.println("3- Parcelado de 3x at√© 6x c/ juros");
 			formaPag=ler.nextShort();
 			
 			
@@ -33,19 +33,19 @@ public class Questao1 {
 						break;
 					case 2:
 						prestacao=totalGasto/2;
-						System.out.println("Cada prestaÁ„o ficar·: "+prestacao);
+						System.out.println("Cada presta√ß√£o ficar√°: "+prestacao);
 						break;
 					case 3:
 						if (totalGasto>=500) {
-							System.out.println("Quantas parcelas ser„o?");
+							System.out.println("Quantas parcelas ser√£o?");
 							parcelas=ler.nextShort();
 							novoValor=(totalGasto/parcelas)*1.03;
-							System.out.println("Cada prestaÁ„o ficar·: "+novoValor);
+							System.out.println("Cada presta√ß√£o ficar√°: "+novoValor);
 							}
 						else {
 					System.out.println("Valor acima de 500,00, insira outra forma de pagamento");
 				}
-					
+						break;
 			}
 			System.out.println("\nInsira o total gasto pelo cliente: ");
 			totalGasto=ler.nextDouble();
